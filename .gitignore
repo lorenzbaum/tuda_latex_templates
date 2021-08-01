@@ -276,3 +276,11 @@ TSWLatexianTemp*
 *.len
 *.pdf
 *.tcbtemp
+
+
+
+
+
+texmf/
+
+tuda_templates.zip

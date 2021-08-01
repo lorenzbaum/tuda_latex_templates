@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./addlicense.sh
+#./addlicense.sh
 
 rm -f tuda_templates.zip
 mkdir -p texmf
@@ -14,7 +14,7 @@ mv DEMO-*.pdf ../texmf/doc/latex/tuda-ci
 cd ..
 
 cp -r tex/. texmf/tex/latex/tuda-ci/.
-cp ~/tuda_logo.pdf texmf/tex/latex/tuda-ci/.
+cp tuda_logo.pdf texmf/tex/latex/tuda-ci/.
 
 mkdir -p texmf/doc/latex/tuda-ci/example
 cp example/*.tex texmf/doc/latex/tuda-ci/example/.
@@ -25,6 +25,6 @@ cp README.md texmf/doc/latex/tuda-ci/.
 
 cd texmf
 
-zip -ll -y -r tuda_templates.zip doc tex
+zip -ll -r tuda_templates.zip doc tex
 
 mv tuda_templates.zip ../.
